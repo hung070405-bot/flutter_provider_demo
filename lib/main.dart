@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
+import 'package:flutter_provider_demo/models/cart_model.dart';
 import 'package:flutter_provider_demo/models/counter_model.dart';
 import 'package:flutter_provider_demo/screens/home_screen.dart';
 
@@ -16,6 +17,7 @@ class MyApp extends StatelessWidget {
     return MultiProvider(
       providers: [
         ChangeNotifierProvider(create: (_) => CounterModel()),
+        ChangeNotifierProvider(create: (_) => CartModel()),
       ],
       child: MaterialApp(
         title: 'Demo Chủ đề 12: Provider & ChangeNotifier',
