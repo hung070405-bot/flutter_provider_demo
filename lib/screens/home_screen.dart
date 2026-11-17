@@ -27,7 +27,7 @@ class HomeScreen extends StatelessWidget {
           TextButton.icon(
             onPressed: () => _openCart(context),
             icon: const Icon(Icons.shopping_cart_outlined),
-            label: Text('Giỏ ($cartCount)'),
+            label: Text('Giỏ: $cartCount'),
           ),
         ],
       ),
@@ -64,7 +64,7 @@ class _CounterSection extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           const Text(
-            '1. Bộ đếm (Consumer / select / read)',
+            '1. Bộ đếm',
             style: TextStyle(fontSize: 16, fontWeight: FontWeight.w600),
           ),
           const SizedBox(height: 12),
@@ -92,7 +92,7 @@ class _CounterSection extends StatelessWidget {
           ),
           const SizedBox(height: 6),
           Text(
-            'Trạng thái (select): $statusLabel',
+            'Trạng thái: $statusLabel',
             style: TextStyle(fontSize: 14, color: Colors.grey.shade700),
           ),
           const SizedBox(height: 12),
@@ -140,7 +140,7 @@ class _CatalogSection extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           const Text(
-            '2. Danh mục & Giỏ hàng (watch / đa màn hình)',
+            '2. Danh mục & Giỏ hàng',
             style: TextStyle(fontSize: 16, fontWeight: FontWeight.w600),
           ),
           const SizedBox(height: 8),

@@ -9,8 +9,8 @@ class CounterModel extends ChangeNotifier {
 
   String get statusLabel {
     if (_count == 0) return 'Chưa có thao tác';
-    if (_count > 0) return 'Đang ở mức dương (+$_count)';
-    return 'Đang ở mức âm ($_count)';
+    if (_count > 0) return 'Đang ở mức dương: +$_count';
+    return 'Đang ở mức âm: $_count';
   }
 
   void increment() {

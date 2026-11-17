@@ -32,7 +32,7 @@
    - Bấm `+ Tăng` vài lần -> chỉ ra dòng `Số đếm` cập nhật qua `Consumer` và dòng `Trạng thái` cập nhật qua `context.select`, trong khi các nút bấm (`context.read`) không bị rebuild.
 2. **Bước 2 – Minh họa đồng bộ nhiều widget trên cùng màn hình:**
    - Ở mục Danh mục, bấm `Thêm` ở *Áo thun Flutter* và *Bàn phím cơ*.
-   - Chỉ cho thầy cô thấy **3 chỗ tự động thay đổi cùng lúc**: nút `Thêm` đổi thành `Đã thêm`, dòng tóm tắt nhảy `Đã chọn: 2 món • Tổng: 450.000đ`, và chữ `Giỏ (2)` trên `AppBar`.
+   - Chỉ cho thầy cô thấy **3 chỗ tự động thay đổi cùng lúc**: nút `Thêm` đổi thành `Đã thêm`, dòng tóm tắt nhảy `Đã chọn: 2 món • Tổng: 450.000đ`, và chữ `Giỏ: 2` trên `AppBar`.
 3. **Bước 3 – Minh họa đồng bộ ngược đa màn hình:**
-   - Bấm `Giỏ (2)` hoặc `Mở giỏ hàng` để sang một route hoàn toàn tách biệt (`CartScreen`).
+   - Bấm `Giỏ: 2` hoặc `Mở giỏ hàng` để sang một route hoàn toàn tách biệt (`CartScreen`).
    - Bấm xóa một món (hoặc `Xóa tất cả`) rồi bấm nút Back quay lại `HomeScreen` -> toàn bộ trạng thái trên `HomeScreen` đã tự đồng bộ sạch sẽ mà không cần viết một dòng `setState()` nào.

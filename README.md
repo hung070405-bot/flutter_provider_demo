@@ -100,6 +100,6 @@ Khi mở rộng dự án đồng bộ trạng thái giỏ hàng hoặc tài kho�
    - `context.select<CounterModel, String>` lắng nghe riêng chuỗi trạng thái dẫn xuất (`statusLabel`).
 
 2. **Phần 2 – Danh mục & Giỏ hàng đa màn hình (`ChangeNotifier` + `context.watch`):**
-   - Bấm `Thêm` ở từng sản phẩm thuộc `HomeScreen` -> badge `Giỏ (X)` trên `AppBar`, dòng tóm tắt `Đã chọn / Tổng tiền` và nút bấm tự đồng bộ tức thì.
+   - Bấm `Thêm` ở từng sản phẩm thuộc `HomeScreen` -> badge `Giỏ: X` trên `AppBar`, dòng tóm tắt `Đã chọn / Tổng tiền` và nút bấm tự đồng bộ tức thì.
    - Chuyển sang route khác là `CartScreen`: danh sách sản phẩm và tổng tiền hiển thị chính xác dữ liệu chung từ `MultiProvider`.
    - Bấm xóa món hoặc `Xóa tất cả` trong `CartScreen` rồi quay lại `HomeScreen`: mọi widget liên quan đều đã phản ánh trạng thái mới mà không cần truyền callback qua lại.
