@@ -14,7 +14,7 @@ class CartScreen extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text('Giỏ hàng (${cart.itemCount})'),
+        title: Text('Giỏ hàng: ${cart.itemCount}'),
       ),
       body: cart.items.isEmpty
           ? const Center(
@@ -61,7 +61,7 @@ class CartScreen extends StatelessWidget {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text(
-                            'Tổng cộng (${cart.itemCount} món)',
+                            'Tổng cộng: ${cart.itemCount} món',
                             style: TextStyle(color: Colors.grey.shade700),
                           ),
                           Text(

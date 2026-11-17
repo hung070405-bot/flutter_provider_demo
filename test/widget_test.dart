@@ -58,28 +58,28 @@ void main() {
     await tester.tap(find.text('+ Tăng'));
     await tester.pump();
     expect(find.text('Số đếm: 1'), findsOneWidget);
-    expect(find.text('Trạng thái (select): Đang ở mức dương (+1)'), findsOneWidget);
+    expect(find.text('Trạng thái: Đang ở mức dương: +1'), findsOneWidget);
 
     // 2. Thêm sản phẩm ở HomeScreen -> AppBar và dòng tổng tự cập nhật
-    expect(find.text('Giỏ (0)'), findsOneWidget);
+    expect(find.text('Giỏ: 0'), findsOneWidget);
     await tester.tap(find.text('Thêm').first);
     await tester.pump();
-    expect(find.text('Giỏ (1)'), findsOneWidget);
+    expect(find.text('Giỏ: 1'), findsOneWidget);
     expect(find.text('Đã chọn: 1 món • Tổng: 150.000đ'), findsOneWidget);
 
     // 3. Mở CartScreen (nhánh màn hình khác), xóa sản phẩm và kiểm tra đồng bộ ngược
-    await tester.tap(find.text('Giỏ (1)'));
+    await tester.tap(find.text('Giỏ: 1'));
     await tester.pumpAndSettle();
-    expect(find.text('Giỏ hàng (1)'), findsOneWidget);
+    expect(find.text('Giỏ hàng: 1'), findsOneWidget);
     expect(find.text('Áo thun Flutter'), findsOneWidget);
 
     await tester.tap(find.byIcon(Icons.delete_outline));
     await tester.pump();
-    expect(find.text('Giỏ hàng (0)'), findsOneWidget);
+    expect(find.text('Giỏ hàng: 0'), findsOneWidget);
 
     await tester.tap(find.byTooltip('Back'));
     await tester.pumpAndSettle();
-    expect(find.text('Giỏ (0)'), findsOneWidget);
+    expect(find.text('Giỏ: 0'), findsOneWidget);
     expect(find.text('Đã chọn: 0 món • Tổng: 0đ'), findsOneWidget);
   });
 }
